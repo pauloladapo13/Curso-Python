@@ -1,7 +1,7 @@
 # el uso de 'Continue'
 
 while True:
-    for i in range(0, 12, 3):
+    for i in range(0, 12, 2):
     
         if i == 3:
             continue
