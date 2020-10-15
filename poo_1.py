@@ -10,8 +10,14 @@ class Coche():
     def arrancar(self, arrancamos):
         self.__enMarcha= arrancamos
         
-        if (self.__enMarcha): 
+        if(self.__enMarcha):
+            chequeo=self.__chequeo_intento()
+        
+        if (self.__enMarcha and chequeo): 
             return 'El coche está en marcha'
+        
+        elif(self.__enMarcha and chequeo==False):
+            return 'Algo ha salido mal en el chequeo, no podemos arrancar.'
         
         else:
             
@@ -20,7 +26,23 @@ class Coche():
         
     def estado(self):
         print('El coche tiene ' , self.__ruedas, 'ruedas. Un ancho de ', self.__anchoChasis, 'y largo de ', self.__largoChasis)
-
+        
+        
+    def __chequeo_intento(self):
+        print('realizando chequeo interno')
+        
+        self.gasolina= 'ok'
+        self.aceite='ok'
+        self.puertas='cerradas'
+        
+        if (self.gasolina=='ok' and self.aceite=='ok' and self.puertas=='cerradas'):
+            
+            return True
+        else:
+            
+            return False 
+            
+            
 # La clase tiene 2 comportamientos
 
 miCoche = Coche() #instanciar o ejemplerizar una clase
@@ -35,7 +57,7 @@ miCoche2= Coche()
 
 print(miCoche2.arrancar(False))
 
-miCoche2.ruedas=2 # Al encapsular tanto las propiedades como los estados con "__" en python. 
+# miCoche2.ruedas=2 # Al encapsular tanto las propiedades como los estados con "__" en python. 
 #NO SE PODRÁ ACCEDER AL CAMBIO DE LA CLASE desde el exterior. Es decir, cualquiera que no tenga acceso a la clase no podrá camiar las propiedades principlaes del mismo(solo el que esta sometido a la encapsulación). 
 
 miCoche2.estado()
