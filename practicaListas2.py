@@ -39,7 +39,7 @@ print('El nombre Antonio se encuentra en el índice ' + nom + ' de la lista.')
 
 miLista.remove('Ana')
 
-#Si quiero eliminar un párametro de la lista, solo tengo que utilizar la función remove antes de usar la función remove
+#Si quiero eliminar un párametro de la lista, solo tengo que utilizar la función remove antes de usar la función print
 print('Pepe' in miLista)
 
 print(miLista[:])

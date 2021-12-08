@@ -1,4 +1,4 @@
-import time 
+import time     
 
 nombre=input('Introduce nombre, por favor:')
 

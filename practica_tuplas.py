@@ -20,3 +20,5 @@ print(nombre)
 print(dia)
 print(agno)
 print(mes)
+#si queremos que se nos devuelva un boolean y comprobar si el usuario ha introducido un dígito o no solo tenemos que utilizar el método "isdigit()"
+print(mes.isdigit())
