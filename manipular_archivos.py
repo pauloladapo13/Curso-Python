@@ -5,10 +5,10 @@ def clearr():
     time.sleep(7)
     if __name__=='__main__':
         clear = lambda: os.system('clear')
+        print('done')
         clear()
 
 archivo_texto = open('archivo.txt', 'r+')       
-print('done')
 
 # frase = 'Estupendo dia para estudiar Python\nEl Lunes'
 # archivo_texto.rite(frase)
