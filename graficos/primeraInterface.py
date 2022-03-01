@@ -16,7 +16,7 @@ miFrame.pack(fill='both')
 
 miFrame.config(bg='yellow')
 miFrame.config(width=640, height='350')
-miFrame.config(bd='35')
+miFrame.config(bd='35') 
 miFrame.config(relief='sunken')
 miFrame.config(cursor='pirate')
 raiz.mainloop()
