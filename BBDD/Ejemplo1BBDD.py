@@ -22,12 +22,12 @@ miCursor.execute("SELECT * FROM PRODUCTOS")
 
 variosProductos=miCursor.fetchall()
 
-for producto in variosProductos:
-
-    print("Nombre Articulo: ", producto[0], "Seccion: ", producto[2])
-
-
 miCursor.executemany("INSERT INTO PRODUCTOS VALUES(?,?,?)", variosProductos)
+for producto in variosProductos:
+    
+    print("Nombre Articulo: ", producto[0], ", Seccion: ", producto[2])
+
+
 
 miConexion.commit()
 
