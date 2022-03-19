@@ -19,28 +19,40 @@ from turtle import clearscreen
 
 # print(len(re.findall(textoBuscar, cadena)))
 
-lista_nombres=['Ana Gomez', 
- 'Maria Martin', 
- 'Sandra Lopez', 
- 'Santiago Marten',
- 'Sandra Fernandez']
+# lista_nombres=['Ana Gomez', 
+#  'Maria Martin', 
+#  'Sandra Lopez', 
+#  'Santiago Marten',
+#  'Sandra Fernandez']
+
+
+# for elemento in lista_nombres:
+#     if re.findall('Martin$', elemento):
+#         print(elemento)
+
+# for elemento in lista_nombres:
+#     if re.findall('[z]', elemento):
+
+#         print(elemento)
+
+lista_nombres=['Ana', 'Pedro', 'Maria', 'Rosa', 'Sandra', 'Celia', 'Cecilia', 'Ceci', 'Roxana', 'Rosalia', 'Roman']
+
+for elemento in lista_nombres:
+       if re.findall('Mart[ie]n', elemento):
+        print(elemento)
 
 
 for elemento in lista_nombres:
-    if re.findall('Martin$', elemento):
+    if re.findall('[o-t]', elemento):
+
         print(elemento)
+
+print('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&')
 
 for elemento in lista_nombres:
-    if re.findall('[z]', elemento):
+    if re.findall('Ro[^o-t]', elemento):
 
         print(elemento)
-
-
-for elemento in lista_nombres:
-    if re.findall('Mart[ie]n', elemento):
-        print(elemento)
-
-
 
 def clearr():
     time.sleep(7)
