@@ -24,12 +24,12 @@ Empleado("Alvaro", "teleoperadora", 12000),
 ]
 
 def calculo_comision(empleado):
-
-    empleado.salaio=empleado.salario*1.03
+    if empleado.salario<20000:
+        empleado.salaio=empleado.salario*1.03
 
     return empleado
 
-l=list(map(calculo_comision, listaEmpleados))
+l=map(calculo_comision, listaEmpleados)
 
 for empleado in l:
 
