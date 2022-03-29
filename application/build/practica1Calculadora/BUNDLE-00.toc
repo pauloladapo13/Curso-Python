@@ -1,0 +1,4 @@
+([('practica1Calculadora',
+   '/Users/pauloladapo/Desktop/Curso de '
+   'python/Curso-Python/application/dist/practica1Calculadora',
+   'EXECUTABLE')],)
