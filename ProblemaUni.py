@@ -1,3 +1,13 @@
+# Sin utilizar metodo o funcion existente, haga una funcion que 
+# averigue si una cadena solo contiende numeros. Ejemplo: Si
+# nos preguntan si la cadena "1234abc"
+# solo tiene numeros debe decir que es falso. en cambio con la cadena "9876", la 
+# respuesta debe ser que es cierto.
+
+
+
+
+
 char= input('introduce una cadena: ')
 v='True'
 def isANumber():
