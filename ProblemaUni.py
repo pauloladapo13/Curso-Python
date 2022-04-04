@@ -4,10 +4,6 @@
 # solo tiene numeros debe decir que es falso. en cambio con la cadena "9876", la 
 # respuesta debe ser que es cierto.
 
-
-
-
-
 char= input('introduce una cadena: ')
 v='True'
 def isANumber():
