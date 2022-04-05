@@ -15,4 +15,8 @@ def cad(palabra, cadena):
             count +=1
     print(count)
 
-cad(s, p)# ui es un ejemplo que use con tequierotequierotequiero, puedes poner la cantidad de cad3nas que quieras a buscar.
+cad(s, p)
+
+#Crear  una funcion que identifique la cantidad de veces que se repite una 
+# cadena en dentro de una  palabra o frases sin utilizar una funcion precreada
+#para tal funcion.
